@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+.main {
+  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img1{
+  display: none;
+}
+.content{
+  display: flex;
+  background-color: white;
+  margin: auto 200px;
+  padding-bottom: -500px;
+ 
+}
+.about{
+  padding: 30px 30px;
+  width: 50%;
+ 
+}
+
+.perfume{
+  padding-bottom: 20px;
+  letter-spacing: 7px;
+}
+.first-h1{
+  padding-bottom: 20px;
+}
+button{
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 20px;
+  transition: 0.4s ease;
+}
+button:hover{
+  background-color: hsl(212, 21%, 14%);
+}
+h2 {
+  color: hsl(158, 36%, 37%);
+  
+}
+.price {
+  text-decoration: line-through;
+  padding-left: 20px;
+ 
+}
+p {
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.price-tag {
+  display: flex;
+  margin: 20px auto;
+
+}
+
+@media screen and (max-width:400px){
+  .img1{
+    display: block;
+  }
+  .img2 {
+    display: none;
+  }
+  .content{
+    margin: 0;
+    width: 89%;
+    flex-direction: column;
+  }
+  .about{
+    width: 100%;
+   
+    padding: 0;
+  }
+  .perfume{
+    padding: 30px 30px;
+  }
+  .first-h1{
+    padding: 0px 30px 15px;
+  }
+  .floral {
+    padding: 15px 30px 15px;
+    line-height: 2;
+  }
+  .price-tag{
+    padding: 15px 30px 15px;
+  }
+  .button{
+    padding: 0 30px 30px;
+  }
+}
